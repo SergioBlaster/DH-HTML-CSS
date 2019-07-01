@@ -1,0 +1,224 @@
+/* -- Regras Gerais Início -- */
+* {
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+}
+
+.contact-body {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15vh;
+}
+/* -- Regras Gerais Fim -- */
+
+/* Área Header Início */
+header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 0 8px 0 #676767;
+}
+
+header .logo-content {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header .logo-content img {
+  width: 10%;
+}
+
+header .container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+header .container ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header .container ul li {
+  list-style: none;
+}
+
+header .container ul .toggle-menu {
+  display: none;
+}
+
+.container ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.container ul li a:hover {
+  text-decoration: underline;
+}
+/* Área Header Fim */
+
+/* Área Contato Início */
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 40%;
+  height: 75vh;
+  justify-content: space-around;
+  border: 1px solid #5f4a98;
+  margin-bottom: 10vh;
+}
+
+.contact-content .contact-title {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-content form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-content form input, textarea {
+    width: 85%;
+    height: 5vh;
+    margin-bottom: 1%;
+    font-size: 1em;
+    border: 1px solid #5f4a98;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-content form textarea {
+    height: 20vh;
+    resize: none;
+}
+
+.contact-content form label {
+    font-size: 1em;
+    margin-top: 1%;
+    width: 85%;
+}
+
+.contact-content form .contact-item {
+    width: 85%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.contact-content form .contact-item input {
+    width: 10%;
+    height: 25%;
+}
+
+.contact-content form .contact-item label {
+    width: 60%;
+}
+
+.contact-content form .contact-item button {
+    background-color: #5f4a98;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.4em;
+    color: white;
+    width: 50%;
+    height: 70%;
+}
+/* Área Contato Fim */
+
+/* Área Footer Início */
+footer {
+    width: 100%;
+    background-color: #5f4a98;
+    color: white;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Área Footer Fim */
+
+/* -- Media Queries Area Begin -- */
+@media only screen and (max-width: 540px) {
+  body {
+    width: 100vw;
+    font-size: 0.8em;
+  }
+
+  header {
+    z-index: 2;
+    height: 10vh;
+  }
+
+  header .container {
+    width: 50%;
+  }
+
+  header .container ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+  }
+
+  header .container ul li {
+    display: none;
+  }
+
+  header .container ul .toggle-menu {
+    display: block;
+    font-size: 1.3em;
+  }
+
+  header .logo-content {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  header .logo-content img {
+    width: 20%;
+  }
+
+  .contact-body {
+      margin-top: 0 15vh;
+  }
+
+  .contact-content {
+      width: 80%;
+      height: 75vh;
+      margin-bottom: 4%;
+  }
+
+  .contact-content .contact-item label {
+      font-size: 0.8em;
+  }
+
+  footer {
+    width: 100vw;
+  }
+}
+/* -- Media Queries Area End -- */
